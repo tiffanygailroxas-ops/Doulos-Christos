@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doulos Christos - Servant of Christ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-cyan: #00f2ff;
+            --obsidian: #020617;
+            --metallic-slate: #0f172a;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--obsidian);
+            color: #f8fafc;
+            background-image: radial-gradient(circle at 50% 50%, var(--metallic-slate) 0%, var(--obsidian) 100%);
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .metal-cyan-glow {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.8), 0 0 20px rgba(0, 242, 255, 0.4);
+        }
+        .neon-border {
+            border: 1px solid rgba(0, 242, 255, 0.4);
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.15), inset 0 0 10px rgba(0, 242, 255, 0.05);
+        }
+        .neon-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4), rgba(15, 23, 42, 0.8));
+            border: 1px solid rgba(0, 242, 255, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(12px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: var(--obsidian);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: var(--neon-cyan);
+            border-radius: 10px;
+        }
+        .animate-pulse-cyan {
+            animation: pulse-cyan 3s infinite ease-in-out;
+        }
+        @keyframes pulse-cyan {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 242, 255, 0.3); border-color: rgba(0, 242, 255, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(0, 242, 255, 0.6); border-color: rgba(0, 242, 255, 0.7); }
+        }
+        .glow-text {
+            animation: pulse-text 4s infinite ease-in-out;
+        }
+        @keyframes pulse-text {
+            0%, 100% { opacity: 0.7; text-shadow: 0 0 5px rgba(0, 242, 255, 0.5); }
+            50% { opacity: 1; text-shadow: 0 0 15px rgba(0, 242, 255, 1); }
+        }
+        .coin-glow {
+            filter: drop-shadow(0 0 20px rgba(0, 242, 255, 0.4));
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
